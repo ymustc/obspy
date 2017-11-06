@@ -1,3 +1,11 @@
+maintenance_1.1.x:
+ - obspy.core:
+   * UTCDateTime now raises a meaningful exceptions when passing
+     invalid or out-of-bounds 'julday' during initialization (see #1988)
+ - obspy.io.mseed:
+   * Avoid showing invalid warnings when guessing endian during parsing
+     timestamps (see #1988)
+
 1.1.0: (doi: 10.5281/zenodo.165135)
  - General:
    * Read support for Guralp Compressed Format (GCF) waveform data,
