@@ -1,6 +1,9 @@
 1.1.x:
  -obspy.core:
    * Fix pickling of traces with a sampling rate of 0 (see #1990)
+ -obspy.io.cnv:
+   * Bugfix when phase_mapping is passed as argument when writing a Catalog
+     object to CNV (see #2001)
  -obspy.io.seiscomp:
    * Fix inventory read when maxClockDrift is unset in SC3ML (see #1993)
  -obspy.signal:
@@ -13,7 +16,7 @@
    * Read support for Reftek 130 (rt130) waveform data,
      obspy.io.reftek (see #1433)
    * Add Nordic format (s-file) read/write (see #1517)
-   * Read and write support for events in the SCARDEC catlogue format
+   * Read and write support for events in the SCARDEC catalogue format
      (see #1391).
    * Read support for IASPEI ISF ISM 1.0 Bulletin event data,
      (see #1946)
